@@ -1,0 +1,88 @@
+import bcrypt from 'bcryptjs';
+const data = {
+    users: [
+        {
+            name:'Sycap',
+            email:'admin@gmail.com',
+            password: bcrypt.hashSync('1234', 8),
+            isAdmin: true,
+            isSeller: true,
+        },
+        {
+            name:'asda',
+            email:'user@gmail.com',
+            password: bcrypt.hashSync('1234', 8),
+            isAdmin: false,
+        },
+
+    ],
+    products:[
+        {
+            name: 'Nike Slim Shirt',
+            category: 'Shirts',
+            image: '/images/p1.jpg',
+            price: 120,
+            countInStock: 10,
+            brand: 'Nike',
+            rating: 4.5,
+            numReviews: 10,
+            description: 'high quality product',
+        },
+        {
+            name: 'Adidas Slim Shirt',
+            category: 'Shirts',
+            image: '/images/p2.jpg',
+            price: 100,
+            countInStock: 15,
+            brand: 'Adidas',
+            rating: 4.0,
+            numReviews: 10,
+            description: 'high quality product',
+        },
+        {
+            name: 'Lacoste Slim Shirt',
+            category: 'Shirts',
+            image: '/images/p3.jpg',
+            price: 220,
+            countInStock: 13,
+            brand: 'Lacoste',
+            rating: 4.8,
+            numReviews: 17,
+            description: 'high quality product',
+        },
+        {
+            name: 'Nike Slim Pants',
+            category: 'Pants',
+            image: '/images/p4.jpg',
+            price: 110,
+            countInStock: 11,
+            brand: 'Nike',
+            rating: 4.5,
+            numReviews: 10,
+            description: 'high quality product',
+        },
+        {
+            name: 'Puma Slim Shirt',
+            category: 'Shirts',
+            image: '/images/p5.jpg',
+            price: 120,
+            countInStock: 12,
+            brand: 'Puma',
+            rating: 4.5,
+            numReviews: 10,
+            description: 'high quality product',
+        },
+        {
+            name: 'Adidas Slim Pants',
+            category: 'Pants',
+            image: '/images/p6.jpg',
+            price: 120,
+            countInStock: 0,
+            brand: 'Adidas',
+            rating: 3.5,
+            numReviews: 10,
+            description: 'high quality product',
+        },
+    ]
+};
+export default data;
